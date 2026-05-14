@@ -3,84 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registration Form</title>
-  <style>
-    body{
-      background: rgb(240, 244, 242);
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    form{
-      background: aqua;
-      margin:auto;
-      padding: 20%;
-      width: 300px;
-      border-radius:20px;
-      font-style: italic;
-    }
-    h2{
-      text-align: center;
-      text-decoration: solid;
-    }
-    input,select{
-      width:100px;
-      padding:2%;
-      margin-top: 5px;
-      margin-bottom: 10px;
-      border-radius: 5px;
-    }
-    input[type="radio"],
-    input[type="checkbox"]{
-      width: auto;
-    }
-    input[type="submit"]{
-      background: #4caf50;
-      color:white;
-      border:1px;
-      padding:10px;
-      font-size: 16px;;
-    }
+  <title>JQuery Mobile Application</title>
+  <link rel="stylesheet"
+    href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 
-  </style>
+   
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
 </head>
 <body>
-  <h2>Student registration form</h2>
-  <form>
-    <div class="name-line">
-      Name :- <br>
-      Fist Name :- <input type="text"><br><br>
-      Middle name :- <input type="text"><br><br>
-      Last name :- <input type="text"><br><br>
+  <div data-role="page">
+    <div data-role="header">
+      <h3>JQuery website</h3>
+    </div>
+
+    <div data-role="content">
+      <h3>Welcome to my jquery website</h3>
+      <a href="#" class="alt-btn">Click me</a>
 
     </div>
-    Email : <input type="email" name="email"><br><br>
-    Password : <input type="password" name="password"><br><br>
 
-    <label>Gender</label>
-      <input type="radio" id="male" name="gender" value="male">male<br>
-      <label for="male"></label>
-      <input type="radio" id="female" name="gender" value="female">female<br>
-      <label for="Female"></label>
-
-    Dob : <input type="Date" name="Dob"><br><br>
-
-    Course : <select>
-      <option>IT</option>
-      <option>Computer</option>
-      <option>AI</option>
-    </select><br><br>
-    Year : <select>
-      <option>FE</option>
-      <option>SE</option>
-      <option>TE</option>
-      <option>BE</option>
-    </select><br><br>
-    Hobbies :<input type="checkbox">Reading
-    <input type="checkbox">Music
-    <input type="checkbox">Coding
-
-    Submit : <input type="submit">
-
-
-  </form>
+    <div data-role="footer">
+      <p>Thank you</p>
+    </div>
+  </div>
 </body>
 </html>

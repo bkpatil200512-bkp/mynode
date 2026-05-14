@@ -1,0 +1,11 @@
+git init
+
+git add filename  eg git add index.html
+
+git commit -m "added index file"
+
+git remote add origin http://github.com/username/project.git
+
+git branch -M main
+
+git push -u origin main
