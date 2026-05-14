@@ -17,7 +17,7 @@
   <script>
     let users=JSON.parse(localStorage.getItem("users")) || [];
     let table=document.getElementById("userTable");
-    users.forEacxh(function(user){
+    users.forEach(function(user){
       let row=`<tr>
         <td>${user.name}</td>
         <td>${user.email}</td>

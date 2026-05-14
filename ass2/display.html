@@ -31,22 +31,23 @@
             <th>Email</th>
         </tr>
     </thead>
-    <tbody id="userTable"></tbody>
+    <tbody id="UserTable"></tbody>
 </table>
 
 <script>
-let users = JSON.parse(localStorage.getItem("users")) || [];
+let users=document.getElementById(localStorage.getItem("users")) || [];
+let table=document.getElementById("UserTable");
 
-let table = document.getElementById("userTable");
-
-users.forEach(function(user) {
-    let row = `<tr>
-                <td>${user.name}</td>
-                <td>${user.email}</td>
-               </tr>`;
-    table.innerHTML += row;
+users.forEach(function(user){
+    let row=`<tr>
+        <td>${user.name}</td>
+        <td>${user.email}</td>
+        </tr>`;
+        table.innerHTML+=row;
 });
-</script>
+
+
+
 
 </body>
 </html>
